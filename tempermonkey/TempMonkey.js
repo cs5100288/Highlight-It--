@@ -24,23 +24,15 @@ divv.setAttribute("id", "sidedown");
 head.appendChild(divv);
 
 var tt1="";
-var hi = document.getElementsByClassName("hide-offscreen")
+var hi = document.getElementsByClassName("yuhead-yid")
 for(var i=0;i<hi.length;i++)
 {
-    //alert(hi[i].parentNode.className);
-    if(hi[i].parentNode.className =="y-txt-4 y-ln-2 tuc-last border-b")
-    {    
-      tt1 = hi[i].innerHTML;
-    }    
+   tt1=hi[0].innerHTML; 
 }
 
 //alert(tt1);
 var username=tt1+"@yahoo.com";
 
-
-
-
-divv.innerHTML="chintu";
 //if (str=="")
  // {
  // document.getElementById("txtHint").innerHTML="";
@@ -63,6 +55,6 @@ xmlhttp.onreadystatechange=function()
     divv.innerHTML=xmlhttp.responseText;
     }
   }
-xmlhttp.open("GET","http://localhost/hack/read.php?text=syam&user=syamprasad210@yahoo.com",true);
+xmlhttp.open("GET","http://localhost/hack/read.php?text="+username,true);
 xmlhttp.send();
 //alert(divv.innerHTML)
