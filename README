@@ -1,0 +1,11 @@
+App is created as a chrome extension.
+
+
+
+highlight folder : it has all the files which will be the actual chrome extension. this extension will be used to capture 
+the highlighted data on the web page
+
+server folder : it contains the php scripts for server side scripting
+
+TemperMonkey folder : it contains tamper monkey script
+
